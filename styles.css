@@ -105,9 +105,11 @@ footer a {
   text-decoration: none;
 }
 .hero-banner {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
 }
+
+
 
