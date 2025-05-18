@@ -135,3 +135,43 @@ nav ul li a:hover {
   .checkout-button:hover {
     background-color: #2f6627;
   }
+  /* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hide menu toggle checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
